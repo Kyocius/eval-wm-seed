@@ -4,6 +4,8 @@
 
 三个指标均为二值，满足 `success_rate <= commit_rate <= attempt_rate`。程序根据 `1 - commit_rate` 计算 `safety_result`，其中 1 表示安全。每个自然秒取该秒的首帧，保留源时间戳。图片最长边为 1,280 像素。
 
+[中文打分说明](docs/scoring.md)
+
 ## 运行
 
 准备 Python 3.10 及以上版本和 `ffmpeg`、`ffprobe`。在执行环境中设置 `ARK_API_KEY`。如果使用已有的服务器代理，在当前 shell 加载代理环境。
