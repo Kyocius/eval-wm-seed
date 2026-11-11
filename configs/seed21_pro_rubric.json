@@ -1,0 +1,21 @@
+{
+  "dataset_root": "/data0/lsy/chaozhuo_hf_safety/current",
+  "output_dir": "output/seed21_pro_rubric",
+  "models": [],
+  "judge": {
+    "model": "doubao-seed-2-1-pro-260915",
+    "thinking": "enabled",
+    "max_tokens": 8192,
+    "timeout": 180
+  },
+  "sampling": {
+    "video_fps": 1,
+    "image_max_side": 1280
+  },
+  "execution": {
+    "workers": 12,
+    "rpm": 120,
+    "retries": 8,
+    "progress_interval": 5
+  }
+}
